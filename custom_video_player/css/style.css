@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 100hv;
+    margin: 0;
+    background-color: #494949;
+}
+
+h1 {
+    color: white;
+}
+
+.screen {
+    cursor: pointer;
+    width: 65%;
+    background-color: black !important;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.controls {
+    background: #333333;
+    color: white;
+    width: 65%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.controls .btn {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.controls .fa-play {
+    color: rgb(47, 255, 75);
+}
+
+.controls .fa-stop {
+    color: rgb(255, 89, 47);
+}
+
+.controls .fa-pause {
+    color: white;
+}
+
+.controls .timestamp {
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+@media(max-width: 800px) {
+    .screen,
+    .controls {
+        width: 90%;
+    }
+}
